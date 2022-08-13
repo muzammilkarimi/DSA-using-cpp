@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-bool pairsum(int arr[], int n, int k)
+void pairsum(int arr[], int n, int k)
 {
     //     // for (int i = 0; i < n - 1; i++)
     //     // {
@@ -19,8 +19,9 @@ bool pairsum(int arr[], int n, int k)
     {
         if (arr[high] + arr[low] == k)
         {
-            cout << high << " " << low << endl;
-            return true;
+            cout << arr[high] << " " << arr[low] << endl;
+            high--;
+            // return true;
         }
         else if (arr[high] + arr[low] > k)
         {
@@ -31,13 +32,13 @@ bool pairsum(int arr[], int n, int k)
             low++;
         }
     }
-    return false;
+    // return false;
 }
 int main()
 {
-    int arr[] = {11, 12, 15, 7, 2, 4};
-    int k = 26;
-    int n = 6;
+    int arr[] = {1, 2, 3, 4, 5};
+    int k = 5;
+    int n = 5;
     int counter = 1;
     while (n > counter)
     {
@@ -58,7 +59,7 @@ int main()
     // }
     // cout<<sortarr[n];
 
-    cout << pairsum(arr, 6, k) << endl;
+    pairsum(arr, 5, k);
 
     return 0;
 }

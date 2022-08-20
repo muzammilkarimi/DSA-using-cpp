@@ -1,1 +1,1 @@
-cout << "s " << s << endl;
+i+a

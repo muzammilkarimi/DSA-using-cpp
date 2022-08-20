@@ -39,7 +39,7 @@ int main()
 {
     long long int n=27;
     long long int intsol= squareroot(n);
-    cout<<"The Answer is "<<moreprecision(n,10,intsol);
+    cout<<"The Answer is "<<moreprecision(n,2,intsol);
 
     return 0;
 }

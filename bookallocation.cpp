@@ -51,8 +51,8 @@ long long bookallocate(int n, int m, vector<int> time)
 }
 int main()
 {
-    int n=2,m=4;
-    vector<int> time = {10,20,30,40};
+    int n=12,m=4;
+    vector<int> time = {31, 14, 19, 75};
     cout<<bookallocate(n,m,time);
     return 0;
 }

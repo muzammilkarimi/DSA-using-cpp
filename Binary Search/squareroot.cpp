@@ -24,12 +24,15 @@ int squareroot(int n)
     }
     return ans;
 }
-double moreprecision(int n, int precision, int intsol){
-    double factor = 1 ;
+double moreprecision(int n, int precision, int intsol)
+{
+    double factor = 1;
     double ans = intsol;
-    for(int i=0; i<precision; i++){
-        factor = factor/10;
-        for (double j=ans; j*j<n; j=j+factor){
+    for (int i = 0; i < precision; i++)
+    {
+        factor = factor / 10;
+        for (double j = ans; j * j < n; j = j + factor)
+        {
             ans = j;
         }
     }
@@ -37,9 +40,9 @@ double moreprecision(int n, int precision, int intsol){
 }
 int main()
 {
-    long long int n=27;
-    long long int intsol= squareroot(n);
-    cout<<"The Answer is "<<moreprecision(n,2,intsol);
+    long long int n = 27;
+    long long int intsol = squareroot(n);
+    cout << "The Answer is " << moreprecision(n, 2, intsol);
 
     return 0;
 }

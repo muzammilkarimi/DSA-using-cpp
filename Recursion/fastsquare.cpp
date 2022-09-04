@@ -5,7 +5,7 @@ int fastpower(int a,int b){
     // while (b>0)
     // {
     //     if(b&1) res=res*a;
-    //     a=a*a;
+    //     a*=a;
     //     b=b>>1;
     // }
     // return res;
@@ -16,7 +16,9 @@ int fastpower(int a,int b){
     // Recursive call
     int ans=fastpower(a,b/2);
     // processing
+    // if b is odd 
     if(b&1) return ans*ans*a;
+    // else b is even
     else return ans*ans;
 }
 int main(){

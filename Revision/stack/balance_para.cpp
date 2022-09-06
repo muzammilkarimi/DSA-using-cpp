@@ -17,16 +17,11 @@ bool balance_para(string s)
             st.push(s[i]);
         }
     }
-    if(st.empty()){
-        return true;
-    }
-    else{
-        return false;
-    }
+    return st.empty();
 }
 int main()
 {
-    string para = "{()}[";
+    string para = "{()}";
     if (balance_para(para))
     {
         cout << "Balance" << endl;

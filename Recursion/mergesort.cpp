@@ -36,15 +36,21 @@ void mergetwosortedarray(int *arr,int s,int e){
         arr[mainarrayindex++]=second[index2++];
     }
 
+    delete []first;
+    delete []second;
+
 
 }
 void mergesort(int arr[],int s,int e){
+    
     // base case
     if(s>=e) return;
 
     int mid=(s+e)/2;
+
     // left side sort
     mergesort(arr,s,mid);
+
     // right side sort
     mergesort(arr,mid+1,e);
 

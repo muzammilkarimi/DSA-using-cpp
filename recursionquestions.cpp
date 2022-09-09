@@ -149,8 +149,8 @@ void per(string s,string ans){
     }
 }
 int main(){
-    per("abc","");
-    // substring("abc","");
+    // per("abc","");
+    substring("abc","");
     // cout<<movex("xxxmxaxkx");
     // cout<<dup("mmmmmmmmmmmmmuzammilkkkkkkkarimi");
     // toh(3,"source","destination","helper");

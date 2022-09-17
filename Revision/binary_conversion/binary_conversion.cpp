@@ -80,13 +80,22 @@ void decimal_to_hexadecimal(int n){
     }
 
 }
+
 int main()
 {
-    binary_to_decimal(101);
-    decimal_to_binary(5);
-    octal_to_decimal(72);
-    decimal_to_octal(58);
-    hexadecimal_to_decimal("10F");
-    decimal_to_hexadecimal(271);
+    // binary_to_decimal(101);
+    // decimal_to_binary(5);
+    // octal_to_decimal(72);
+    // decimal_to_octal(58);
+    // hexadecimal_to_decimal("10F");
+    // decimal_to_hexadecimal(271);
+
+    string binary="10010";
+    int decimal=0;
+    decimal=stoi(binary,0,2);
+    cout<<"binary to decimal"<<decimal<<endl;
+    string hexa="f";
+    decimal=stoi(hexa,nullptr,16);
+    cout<<"hexadecimal to decimal"<<decimal<<endl;
     return 0;
 }

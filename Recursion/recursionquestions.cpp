@@ -134,7 +134,6 @@ void substring(string s,string ans){
     string rest=s.substr(1);
     substring(rest,ans);
     substring(rest,ans+ch);
-
 }
 //print permutation 
 void per(string s,string ans){

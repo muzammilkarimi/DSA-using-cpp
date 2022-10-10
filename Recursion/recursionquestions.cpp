@@ -85,6 +85,22 @@ void replacepi(string s){
         replacepi(s.substr(1));
     }
 }
+string exchangepi(string str){
+    string ans="",temp="";
+    for(int i=0; i<str.length()-1; i++){
+        if(str[i]!='p' and str[i+1]!='i'){
+            temp+=str[i];
+        }
+        else{
+            ans+=temp+"3.14";
+            i++;
+            temp="";
+        }
+       
+    }
+    ans+=temp;
+    return ans;
+}
 //tower of hanoi
 void toh(int n, string src,string dest,string hlp){
     if(n==0){
@@ -149,11 +165,13 @@ void per(string s,string ans){
 }
 int main(){
     // per("abc","");
-    substring("abc","");
+    // substring("abc","");
     // cout<<movex("xxxmxaxkx");
     // cout<<dup("mmmmmmmmmmmmmuzammilkkkkkkkarimi");
     // toh(3,"source","destination","helper");
-    // replacepi("makpipi");
+    replacepi("makpipi");
+    string pi = exchangepi("makpipi");
+    cout<<pi;
     // rev("muzammil");
     // printdec(10);
     // cout<<"increasing order\n";

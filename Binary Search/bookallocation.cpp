@@ -22,6 +22,7 @@ bool ispossible(int n, int m, vector<int> time, long long int mid)
     }
     return true;
 }
+
 long long bookallocate(int n, int m, vector<int> time)
 {
     // Write your code here.

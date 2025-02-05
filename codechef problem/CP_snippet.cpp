@@ -10,8 +10,8 @@
 #define ll long long
 using namespace std;
 int main(){
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);   
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);   
     fi(1,6){
         print i n;
     }

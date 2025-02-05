@@ -12,7 +12,7 @@ void findpermutation(vector<int> arr, vector<vector<int>> &per, int index){
     }
 }
 int main(){
-    vector<int> arr={1,2,3};
+    vector<int> arr={1,2,3,4};
     vector<vector<int>> per;
     int index=0;
     findpermutation(arr,per,index);
